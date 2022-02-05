@@ -1,2 +1,1 @@
-# generateur_bgpriority
- 
+A simple command-line application.
