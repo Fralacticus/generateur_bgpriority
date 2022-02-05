@@ -49,3 +49,7 @@ Ajouter le dossier **bgpriority** dans le dossier assets (gb-studio fonctionne d
  ┣ 📂build
    ┗ [...]
 ```
+
+Pour chaque fichier .png du dossier backgrounds pour lequel on veut gérer la priorité par tuile :
+- Dans le dossier bgpriority, copier le fichier .png original (où créer un fichier .png de même longueur et largeur)
+- Le nommer en suffixant le nom original par "_priority" (exemple : pour launch_site.png > launch_site_priority.png)
