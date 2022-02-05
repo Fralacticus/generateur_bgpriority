@@ -54,7 +54,7 @@ Pour chaque fichier .png du dossier backgrounds pour lequel on veut gérer la pr
 - Dans le dossier bgpriority, copier le fichier .png original (où créer un fichier .png de même longueur et largeur)
 - Le nommer en suffixant le nom original par "_priority" (exemple : pour launch_site.png > launch_site_priority.png)
 
-Le but est de pouvoir ajouter la propriété "Priorité d'une tuile sur les objets" (background per tile priority) aux tuiles. Quand elle est activée, un objet siruté sur une tuile priorisée est affiché au dessus de la couleur 0 et en dessous des couleurs 1,2 et 3 de la palette de cette tuile.
+Le but est de pouvoir ajouter la propriété "Priorité d'une tuile sur les objets" (background per tile priority) aux tuiles. Quand elle est activée, un objet situé sur une tuile priorisée est affiché au dessus de la couleur 0 et en dessous des couleurs 1,2 et 3 de la palette de cette tuile.
 Cela se concrétise par fixer à 1 le bit n°7 de l'attribut d'une tuile, comme l'indique la documentation :
 [https://gbdev.gg8.se/wiki/articles/Video_Display#VRAM_Sprite_Attribute_Table_.28OAM.29](https://gbdev.gg8.se/wiki/articles/Video_Display#VRAM_Sprite_Attribute_Table_.28OAM.29)
 ```
@@ -66,4 +66,4 @@ Cela se concrétise par fixer à 1 le bit n°7 de l'attribut d'une tuile, comme 
  Bit 7    BG-to-OAM Priority         (0=Use OAM priority bit, 1=BG Priority)
  ```
  
- ![harry potter behind wall](https://github.com/Fralacticus/generateur_bgpriority/blob/main/captures/harry_potter_move.gif)
+ ![personnage marche derriere arbrel](https://github.com/Fralacticus/generateur_bgpriority/blob/main/captures/perso_marche_derriere.gif)
