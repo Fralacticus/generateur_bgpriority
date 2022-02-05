@@ -66,4 +66,4 @@ Cela se concrétise par fixer à 1 le bit n°7 de l'attribut d'une tuile, comme 
  Bit 7    BG-to-OAM Priority         (0=Use OAM priority bit, 1=BG Priority)
  ```
  
- ![harry potter behind wall](https://github.com/Fralacticus/generateur_bgpriority/blob/main/captures/harry_potter_move.gif)
+ ![personnage marche derriere arbrel](https://github.com/Fralacticus/generateur_bgpriority/blob/main/captures/perso_marche_derriere.gif)
