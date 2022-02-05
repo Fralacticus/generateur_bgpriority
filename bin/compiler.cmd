@@ -1,1 +1,1 @@
-dart compile exe generateur_bgpriority.dart -o prioriseur_gbstudio.exe
+dart compile exe generateur_bgpriority.dart -o generateur_bgpriority.exe
