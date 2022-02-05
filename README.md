@@ -64,3 +64,6 @@ Cela se concrétise par fixer à 1 le bit n°7 de l'attribut d'une tuile, comme 
  Bit 5    Horizontal Flip            (0=Normal, 1=Mirror horizontally)
  Bit 6    Vertical Flip              (0=Normal, 1=Mirror vertically)
  Bit 7    BG-to-OAM Priority         (0=Use OAM priority bit, 1=BG Priority)
+ ```
+ 
+ ![harry potter behind wall](https://github.com/Fralacticus/generateur_bgpriority/blob/main/captures/harry_potter_move.gif)
