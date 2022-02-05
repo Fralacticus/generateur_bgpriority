@@ -1,15 +1,15 @@
-# Fichier modifié
+# Modifications du projet **gb-studio**
 Dans le projet : [https://github.com/chrismaltby/gb-studio](https://github.com/chrismaltby/gb-studio)
 
 Chemin du fichier modifié : **gb-studio\src\lib\compiler\compileData.js**
 
 
 Insertion au début du fichier :
-```dart
+```javascript
 import fs from 'fs';
 ```
 Insertion plus loin dans le fichier...
-```dart
+```js
 if (fs.existsSync(`${projectRoot}/assets/bgpriority/${background.name}_priority.json`)) {
 	const listeJson = fs.readFileSync(`${projectRoot}/assets/bgpriority/${background.name}_priority.json`,'UTF-8');
 	const liste = JSON.parse(listeJson);
@@ -21,7 +21,7 @@ if (fs.existsSync(`${projectRoot}/assets/bgpriority/${background.name}_priority.
 }		
 ```
 ... qui se situe juste avant le code existant :
-```js
+```javascript
 // Determine tilemap attrs
 const tilemapAttrData = padArrayEnd(
 	background.tileColors || [],
