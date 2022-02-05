@@ -29,3 +29,7 @@ const tilemapAttrData = padArrayEnd(
 	0
 );
 ```
+
+![launch_site with priority in red](https://github.com/Fralacticus/generateur_bgpriority/blob/main/captures/launch_site_avec_priorite.png)
+
+![#C9002E](https://via.placeholder.com/15/C9002E/000000?text=+) `#C9002E`
