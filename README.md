@@ -1,14 +1,14 @@
 # Introduction
 ## Avertissement
 Ce projet est personnel et non affilié à [https://github.com/chrismaltby/gb-studio](https://github.com/chrismaltby/gb-studio).
-Je ne garantie pas son fonctionnement et me dégage de toute responsabilité liée à son utilisation.
+Je ne garantit pas son fonctionnement et me dégage de toute responsabilité liée à son utilisation.
 ## Concept
-Au moment où j'écris ceci, cette proposition me permet de pallier l'absence de la fonctionnalité dans gb-studio qui permettrai d'activé la **priorité d'une tuile sur les objets** ("background priority per tile").
+Au moment où j'écris ceci, cette proposition me permet de pallier l'absence de la fonctionnalité dans gb-studio qui permettrait d'activer la **priorité d'une tuile sur les objets** ("background priority per tile").
 En substance, il s'agit de s'intercaler dans la compilation d'un projet gb-studio pour injecter des tables de priorité, créés par mon programme *generateur_bgpriority*.
 
 ## Objectif
 
-L'objectif est de pouvoir ajouter la propriété **priorité d'une tuile sur les objets** aux tuiles des fichiers background. Quand elle est activée, un objet situé sur une tuile priorisée est affiché au dessus de la couleur 0 et en dessous des couleurs 1,2 et 3 de la palette de cette tuile.
+L'objectif est de pouvoir ajouter la propriété **priorité d'une tuile sur les objets** aux tuiles des fichiers background. Quand elle est activée, un objet situé sur une tuile priorisée est affiché au-dessus de la couleur 0 et en dessous des couleurs 1,2 et 3 de la palette de cette tuile.
 Cela se concrétise par fixer à 1 le bit n°7 de l'attribut d'une tuile, comme l'indique la documentation :
 [https://gbdev.gg8.se/wiki/articles/Video_Display#VRAM_Sprite_Attribute_Table_.28OAM.29](https://gbdev.gg8.se/wiki/articles/Video_Display#VRAM_Sprite_Attribute_Table_.28OAM.29)
 ```
@@ -29,7 +29,7 @@ Dans le projet : [https://github.com/chrismaltby/gb-studio](https://github.com/c
 Chemin du fichier modifié : **gb-studio\src\lib\compiler\compileData.js**
 
 
-Inserer au début du fichier :
+Insérer au début du fichier :
 ```javascript
 import fs from 'fs';
 ```
@@ -78,7 +78,7 @@ Pour chaque fichier .png du dossier backgrounds pour lequel on veut gérer la pr
 - Dans le dossier bgpriority, copier le fichier .png original (où créer un fichier .png de même longueur et largeur)
 - Le nommer en suffixant le nom original par "_priority" (exemple : pour launch_site.png > launch_site_priority.png)
 
-Dans un éditeur d'image coloriser les tuiles de 8x8 pixels pours lesquelles la priorité est souhaitée avec la couleur  : ![#C9002E](https://via.placeholder.com/15/C9002E/000000?text=+) `#C9002E`
+Dans un éditeur d'image coloriser les tuiles de 8x8 pixels pour lesquelles la priorité est souhaitée avec la couleur  : ![#C9002E](https://via.placeholder.com/15/C9002E/000000?text=+) `#C9002E`
 
 ![launch_site with priority in red](https://github.com/Fralacticus/generateur_bgpriority/blob/main/captures/launch_site_avec_priorite.png)
 
