@@ -68,3 +68,5 @@ Cela se concrétise par fixer à 1 le bit n°7 de l'attribut d'une tuile, comme 
  
  ![personnage marche derriere arbrel](https://github.com/Fralacticus/generateur_bgpriority/blob/main/captures/perso_marche_derriere.gif)
  
+ ###### Gener
+ 
