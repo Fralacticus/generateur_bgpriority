@@ -46,9 +46,8 @@ Créer le dossier **bgpriority** dans le dossier assets (gb-studio fonctionne de
  ┣ 📂build
    ┗ [...]
 ```
-Pour chaque fichier .png du dossier backgrounds pour lequel on veut gérer la priorité par tuile :
-- Dans le dossier bgpriority, copier le fichier .png original (où créer un fichier .png de même longueur et largeur)
-- Le nommer en suffixant le nom original par "_priority" (exemple : pour launch_site.png > launch_site_priority.png)
+
+
 
 
 ## Objectif
@@ -68,10 +67,15 @@ Cela se concrétise par fixer à 1 le bit n°7 de l'attribut d'une tuile, comme 
 
 # Utilisation
 
-## Créer les fichiers .png de priorité
+## Préparer les fichiers .png de priorité
+Pour chaque fichier .png du dossier backgrounds pour lequel on veut gérer la priorité par tuile :
+- Dans le dossier bgpriority, copier le fichier .png original (où créer un fichier .png de même longueur et largeur)
+- Le nommer en suffixant le nom original par "_priority" (exemple : pour launch_site.png > launch_site_priority.png)
+
+Dans un éditeur d'image coloriser les tuiles de 8x8 pixels pours lesquelles la priorité est souhaitée avec la couleur  : ![#C9002E](https://via.placeholder.com/15/C9002E/000000?text=+) `#C9002E`
 ![launch_site with priority in red](https://github.com/Fralacticus/generateur_bgpriority/blob/main/captures/launch_site_avec_priorite.png)
 
-Utiliser la couleur suivante pour coloriser un bloc de pixels de 8x8 :     ![#C9002E](https://via.placeholder.com/15/C9002E/000000?text=+) `#C9002E`
+
 ## Générer les fichiers de priorité
 
 Via la console de commande, saisir le nom du programme suivit du chemin absolu du dossier assets du projet.
