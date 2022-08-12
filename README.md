@@ -78,7 +78,7 @@ Pour chaque fichier .png du dossier backgrounds pour lequel on veut gérer la pr
 - Dans le dossier bgpriority, copier le fichier .png original (où créer un fichier .png de même longueur et largeur)
 - Le nommer en suffixant le nom original par "_priority" (exemple : pour launch_site.png > launch_site_priority.png)
 
-Dans un éditeur d'image coloriser les tuiles de 8x8 pixels pour lesquelles la priorité est souhaitée avec la couleur  : ![#C9002E](https://via.placeholder.com/15/C9002E/000000?text=+) `#C9002E`
+Dans un éditeur d'image coloriser les tuiles de 8x8 pixels pour lesquelles la priorité est souhaitée avec la couleur  : ![#C9002E](https://via.placeholder.com/15/C9002E.png) `#C9002E`
 
 ![launch_site with priority in red](https://github.com/Fralacticus/generateur_bgpriority/blob/main/captures/launch_site_avec_priorite.png)
 
